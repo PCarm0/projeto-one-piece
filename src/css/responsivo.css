@@ -1,10 +1,8 @@
 
-@media (max-width: 769px) {
+@media (max-width: 769px ) {
     main::after {
         background: linear-gradient(0deg, #000 20%, rgba(0, 0, 0, 0.00) 65%) no-repeat;
         width: 100vw;
-
-
 }
 
 main .personagem .imagem {
@@ -16,12 +14,11 @@ main .personagem .imagem {
     left: 0;
     top: -20%;
     max-width: 100vw;
-    padding: 30px;
-
+    padding: 24px;
 }
 
 .conteudo .nome-personagem {
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .conteudo .descrição {
@@ -30,13 +27,25 @@ main .personagem .imagem {
 
 .botoes {
     flex-direction: row;
-    align-items: flex-end;
-    width: 100%;
-    padding: 30px;
+    width: 10vw;
+    padding: 3vh;
+    height: 10vh;
+    top: 80%;
+    justify-content: flex-end;
+    gap: 1vw;
+    left: 95vw;
+    position: fixed;
 }
 
 .botoes .botao img {
-    max-width: 60px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.botoes .botao {
+    width: 10vw;
+    height: 10vh;
 }
 }
 
@@ -44,15 +53,21 @@ main .personagem .imagem {
     main .personagem .imagem {
         height: auto;
     }
+    main::after {
+        background: linear-gradient(0deg, #000 20%, rgba(0, 0, 0, 0.00) 65%) no-repeat;
+        width: 100vw;
+    }
+
 
     .conteudo .logo {
         width: 170px;
         height: 75px;
+        position: static;
     }
 
 
     .conteudo {
-         top: -30%;
+         top: fixed;
 
     }
 
@@ -61,12 +76,74 @@ main .personagem .imagem {
     }
 
     .botoes {
-        padding: 20px;
-        top: -20%;
+        direction: row;
+        gap: 2px;
+        height: 0vh;
+        width: 0vw;
+        background-color: rgba(231, 233, 233, 0.034);
     }
 
     .botoes .botao img {
-        max-width: 50px;
+        height: 5vh;
+        width: 5vh;
+        border-radius: 100%;
+    }
+    .botoes .botao {
+        border: none;
+        background: black;
+        cursor: pointer;
+        border-radius: 100%;
+        width: 10.3vw;
+        height: 5vh;
     }
 
+    .botoes .botao.selecionado {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px #D9D9D9;
+    }
 }
+    @media (max-width: 250px) {
+            main .personagem .imagem {
+        height: auto;
+    }
+   
+    main::after {
+        background: linear-gradient(0deg, #000 20%, rgba(0, 0, 0, 0.00) 65%) no-repeat;
+        width: 100vw;
+}
+
+
+    .conteudo .logo {
+        width: 80px;
+        height: 40px;
+        position: fixed;
+        top: 29px;
+    }
+
+
+    .conteudo {
+         top: fixed;
+         font-size: 6px;
+         position: fixed;
+
+    }
+
+    .conteudo .nome-personagem {
+        top: 70px;
+        font-size: 12px;
+        position: fixed;
+    }
+
+    .botoes {
+        top: -10%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .botoes .botao img {
+        max-width: fit-content;
+        max-height: fit-content;
+        display: all;
+        position: all;
+    }
+    }

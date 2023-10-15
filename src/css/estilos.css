@@ -65,13 +65,13 @@ main .personagem .imagem {
 
 .botoes {
     position: fixed;
-    top: 0;
+    top: 0px;
     right: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 110px;
-    justify-content: right;
+    width: 70px;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -81,15 +81,15 @@ main .personagem .imagem {
     border: none;
     background: black;
     cursor: pointer;
+    width: 8vh;
+    height: 8vh;
     border-radius: 50%;
-    width: 9vh;
-    height: 9vh;
 }
 
 .botoes .botao img {
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
 }
 
 .botoes .botao.selecionado {
