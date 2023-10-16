@@ -70,7 +70,7 @@ main .personagem .imagem {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 70px;
+    width: 130px;
     justify-content: center;
     align-items: center;
     gap: 10px;
